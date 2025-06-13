@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #a58b6f;
+  --primary-light: #d4b999;
+  --primary-dark: #7a634c;
+  --text-color: #333;
+  --light-bg: #fffaf5;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: #f9f5f0;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.text-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  
+}
+
+/* sobre */
+.sobre-linha{
+  display: flex;
+  gap: 10px;
+  justify-items: center;
+  justify-self: center;
+  width: 100%;
+  padding: 4% 15%;
+  height: 100%;
+}
+
+.sobre-coluna1{
+  flex: 0 0 35%; 
+  text-align: left;
+  padding-right: 3%;
+  padding-left: 10%;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+}
+
+.sobre-coluna2{
+  flex: 0 0 65%;
+  text-align: left;
+}
+
+.sobre-index{
+  border-right: 4px outset var(--primary-color);
+  border-bottom: 4px outset var(--primary-color);
+  color: var(--primary-color);
+  padding: 1%;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+.sobre-index:hover{
+  color: #ffffff;
+  background-color: var(--primary-color);
+}
+
+.sobre-coluna1 a{
+  text-decoration: none !important;
+}
+
+#sobre, #hist, #polit {
+  scroll-margin-top: 100px;
+}
+
+#sobre h4, #hist h4, #polit h4{
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.sobre-main{
+  border-bottom: 2px inset;
+}
+
+.sobre-text{
+  font-size: 1.2em !important;
+}
+
+@media (max-width: 500px) {
+  .sobre-linha {
+    flex-direction: column;
+    padding: 2% 5%;
+  }
+
+  .sobre-coluna1 {
+    background-color: #ffffff;
+    border-bottom: 2px inset;
+    justify-content: center;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .sobre-coluna1 a{
+    text-decoration: none;
+    flex: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-right: 4px outset var(--primary-color);
+    border-bottom: 4px outset var(--primary-color);
+    height: 70px;
+  }
+
+  .sobre-coluna1 a p{
+    text-align: center;
+    border: none;
+  }
+}
+/* sobre-- */

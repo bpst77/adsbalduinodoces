@@ -1,0 +1,30 @@
+{"todos": [
+    {"link": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2e31b9f2-8efc-47b7-8b33-9c95cfcd716f/202504301328_79Q3_.jpeg", "tit": "Brigadeiro Gourmet", "desc": "Feito com chocolate belga e cacau 70%", "prec": "R$ 5,00"},
+    {"link": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2e31b9f2-8efc-47b7-8b33-9c95cfcd716f/202503290227_5TQ2_.jpeg", "tit": "Bem-casado", "desc": "Tradição em casamentos, feito com ingredientes finos", "prec": "R$ 4,00"},
+    {"link": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/2e31b9f2-8efc-47b7-8b33-9c95cfcd716f/202503291301_78WP_.jpeg", "tit": "Torta de Limão", "desc": "Crocante com recheio cremoso e azedinho", "prec": "R$ 8,00"}
+],
+
+"brigs": [
+    {"link": "prods/brigs1.jpg", "tit": "Brigadeiro", "desc": "Descricao", "prec": "R$ 7,00"},
+    {"link": "prods/brigs2.jpg", "tit": "Beijinho", "desc": "Descricao", "prec": "R$ 8,00"},
+    {"link": "prods/brigs3.jpg", "tit": "Bicho de pé", "desc": "Descricao", "prec": "R$ 9,00"}
+],
+
+"bolos": [
+    {"link": "prods/bolos1.jpg", "tit": "Limão", "desc": "Descricao", "prec": "R$ 7,00"},
+    {"link": "prods/bolos2.jpg", "tit": "Murango", "desc": "Descricao", "prec": "R$ 7,00"},
+    {"link": "prods/bolos3.jpg", "tit": "Cenoura", "desc": "Descricao", "prec": "R$ 7,00"}
+],
+
+"finos": [
+    {"link": "prods/finos1.jpg", "tit": "Casquinha", "desc": "Descricao", "prec": "7,00"},
+    {"link": "prods/finos2.jpg", "tit": "Trufado", "desc": "Descricao", "prec": "8,00"},
+    {"link": "prods/finos3.jpg", "tit": "Recheio", "desc": "Descricao", "prec": "9,00"}
+],
+
+"kits": [
+    {"link": 1, "tit": "Título", "desc": "Descricao", "prec": "7,00"},
+    {"link": 1, "tit": "Título", "desc": "Descricao", "prec": "8,00"},
+    {"link": 1, "tit": "Título", "desc": "Descricao", "prec": "9,00"}
+]
+}
