@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre - Baldoino Doces</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #a58b6f;
+      --primary-light: #d4b999;
+      --primary-dark: #7a634c;
+      --text-color: #333;
+      --light-bg: #fffaf5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <section class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="logo2.png" class="contato-logo" alt="Logo Baldoino Doces" width="80" />
+          <span class="text-logo" style="color: var(--primary-color);">Baldoino Doces</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <section class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html" style="color: var(--primary-dark);">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="produtos.html" style="color: var(--primary-dark);">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html" style="color: var(--primary-dark);">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html" style="color: var(--primary-dark);">Contato</a></li>
+          </ul>
+        </section>
+      </section>
+    </nav>
+  </header>
+
+  <main class="contato-fundo">
+    <div class="contato-main">
+        <section class="text-center margin-md">
+            <h3 class="contato-func">Funcionamento</h3>
+            <table class="hours-table table contato-table">
+            <thead>
+            <tr>
+                <th>Dia da Semana</th>
+                <th>Horário</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>Segunda a Sexta</td>
+                <td>9h às 18h</td>
+            </tr>
+            <tr>
+                <td>Sábado</td>
+                <td>9h às 13h</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>Fechado</td>
+            </tr>
+            </tbody>
+            </table>
+        </section>
+
+        <h3 class="contato-fale">Fale Conosco</h3>
+        <form id="formContato" class="contato-form">
+        <div class="form-lin margin-sm">
+            <div class="form-col1">
+            <input class="form-control" type="text" name="nome" placeholder="Nome completo" required>
+            </div>
+
+            <div class="form-col2 text-center">
+            <input type="date" name="nascimento" required>
+            </div>
+        </div>
+
+        <div class="form-lin margin-sm">
+            <div class="form-col1">
+            <input class="form-control margin-sm" type="email" name="email" placeholder="Email" required>
+            <input class="form-control" type="tel" name="telefone" placeholder="Telefone (somente números)" required pattern="[0-9]{10,11}">
+            </div>
+
+            <div class="form-col2" style="background-color: var(--primary-dark); border-radius: 10%; text-align: center; height: 80px;">
+                <fieldset>
+                <legend>Tipo de cliente</legend>
+                <label><input type="radio" name="tipo" value="cliente" required> Cliente</label>
+                <label><input type="radio" name="tipo" value="fornecedor"> Fornecedor</label>
+                </fieldset>
+            </div>
+        </div>
+
+        <select name="assunto" required class="margin-sm form-select">
+            <option value="" disabled selected>Selecione um assunto</option>
+            <option value="elogio">Elogio</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="pedido">Pedido Especial</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <div class="margin-sm">
+        <textarea name="mensagem" placeholder="Sua mensagem" required class="form-control"></textarea>
+        </div>
+
+        <div class="margin-sm form-lin" style="justify-content: space-between;">
+            <div class="form-col3"><label><input type="checkbox" class="form-check-input" name="newsletter"> Quero receber novidades por email</label></div>
+            <div class="form-col4"><button type="submit" class="btn btn-primary">Enviar Mensagem</button></div>
+        </div>
+        </form>
+    </div>
+  </main>
+
+  <!-- RODAPÉ -->
+<footer>
+</footer>
+
+<!-- JS -->
+  <script src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
