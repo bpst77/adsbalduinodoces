@@ -71,6 +71,7 @@ body {
 #sobre h4, #hist h4, #polit h4{
   padding-bottom: 10px;
   border-bottom: 3px solid var(--primary-color);
+  font-weight: 600;
 }
 
 .sobre-main{
@@ -106,7 +107,7 @@ body {
     margin-bottom: 5px;
     border-right: 4px outset var(--primary-color);
     border-bottom: 4px outset var(--primary-color);
-    height: 70px;
+    height: 40px;
   }
 
   .sobre-coluna1 a p{
@@ -117,7 +118,6 @@ body {
 /* sobre-- */
 
 /*contato*/
-
 .contato-fundo{
   background-image: url("contato-fundo.png");
   height: 720px;
@@ -162,7 +162,6 @@ body {
   text-align: right;
 }
 
-
 .contato-h3{
   font-family: aaaa;
 }
@@ -172,7 +171,7 @@ body {
   color: var(--light-bg);
   font-family: "Italianno", cursive;
   font-size: 3.5em;
-  font-weight: 200;
+  font-weight: 400;
   margin-bottom: -30px;
 }
 
@@ -211,9 +210,15 @@ body {
   }
 
   .form-col2 legend{
-    font-size: 19px;
+    font-size: 1.3em;
   }
 
+}
+
+@media (min-height: 721px){
+  .contato-fundo{
+    height: 100vh;
+  }
 }
 
 /*espacinho*/
