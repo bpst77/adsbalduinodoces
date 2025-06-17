@@ -20,6 +20,13 @@ body {
   font-size: 1.3rem;
 }
 
+/*espacinho*/
+.margind-sm{margin-bottom: 10px;} .margind-md{margin-bottom: 40px;}
+
+.tlight{
+  color: var(--light-bg)
+}
+
 /* sobre */
 .sobre-linha{
   display: flex;
@@ -118,9 +125,13 @@ body {
 /* sobre-- */
 
 /*contato*/
+.italiano{
+  font-family: "Italianno", cursive; /*fonte cursiva*/
+}
+
 .contato-fundo{
   background-image: url("contato-fundo.png");
-  height: 720px;
+  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,9 +143,22 @@ body {
   padding: 2%;
 }
 
+.contato-func{
+  margin-bottom: 6vh;
+}
+
 .contato-form{
-  color: var(--light-bg);
-  padding: 20px;
+  padding: 20px 20px 20px 35px;
+}
+
+.form-fundo{
+  
+}
+
+.tfale{
+  font-size: 4.8em;
+  font-family: 700;
+  margin: 0;
 }
 
 .form-lin{
@@ -148,35 +172,9 @@ body {
 
 .form-col2{
   flex: 0 0 30%;
-}
-
-.form-col3{
-  flex: 1;
-  text-align: left;
-  padding-top: 5px;
-  padding-left: 10px;
-}
-
-.form-col4{
-  flex: 1;
-  text-align: right;
-}
-
-.contato-h3{
-  font-family: aaaa;
-}
-
-.contato-fale{
-  margin-left: 20px;
-  color: var(--light-bg);
-  font-family: "Italianno", cursive;
-  font-size: 3.5em;
-  font-weight: 400;
-  margin-bottom: -30px;
-}
-
-.contato-func{
-  color: var(--light-bg);
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
 }
 
 .contato-table{
@@ -189,9 +187,13 @@ body {
   height: 100%;
 }
 
-@media (max-width: 500px) {
+#contatoForm {
+
+}
+
+@media (max-width: 600px) {
     .contato-main{
-    width: 100%;
+    width: 100vw;
     justify-self: center;
     padding: 0;
   }
@@ -204,24 +206,44 @@ body {
     width: 100%;
   }
 
-  .form-col2{
-  font-size: 0.7em;
-  align-content: center;
+  .tfale{
+    font-size: 2.4 em;
   }
 
-  .form-col2 legend{
-    font-size: 1.3em;
-  }
-
+  .form-lin{
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  height: 100%;
 }
 
-@media (min-height: 721px){
-  .contato-fundo{
-    height: 100vh;
+.form-col1{
+  flex: 1;
+}
+
+.form-col2{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+  .contato-form{
+    padding: 0 10px;
+  }
+  
+  .btn{
+    height: 120%;
   }
 }
 
-/*espacinho*/
-.margin-sm{margin-bottom: 10px;} .margin-md{margin-bottom: 40px;}
+@media (min-height: 800px) and (min-width: 601px){
+  .contato-table{
+    height: auto;
+  }
 
+  .contato-main{
+    width: 80%;
+  }
+}
 /*contato---*/
