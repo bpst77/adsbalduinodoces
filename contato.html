@@ -47,78 +47,71 @@
 
   <main class="contato-fundo">
     <div class="contato-main">
-        <section class="text-center margin-md">
-            <h3 class="contato-func">Funcionamento</h3>
-            <table class="hours-table table contato-table">
-            <thead>
-            <tr>
-                <th>Dia da Semana</th>
-                <th>Horário</th>
-            </tr>
-            </thead>
+        <section class="contato-func text-center">
 
-            <tbody>
-            <tr>
-                <td>Segunda a Sexta</td>
-                <td>9h às 18h</td>
-            </tr>
-            <tr>
-                <td>Sábado</td>
-                <td>9h às 13h</td>
-            </tr>
-            <tr>
-                <td>Domingo</td>
-                <td>Fechado</td>
-            </tr>
-            </tbody>
-            </table>
+          <h3 class="">Funcionamento</h3>
+          <table class="hours-table table contato-table">
+          <thead>
+          <tr>
+              <th>Dia da Semana</th>
+              <th>Horário</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+              <td>Segunda a Sexta</td>
+              <td>9h às 18h</td>
+          </tr>
+          <tr>
+              <td>Sábado</td>
+              <td>9h às 13h</td>
+          </tr>
+          <tr>
+              <td>Domingo</td>
+              <td>Fechado</td>
+          </tr>
+          </tbody>
+          </table>
+
         </section>
 
-        <h3 class="contato-fale">Fale Conosco</h3>
-        <form id="formContato" class="contato-form">
-        <div class="form-lin margin-sm">
-            <div class="form-col1">
-            <input class="form-control" type="text" name="nome" placeholder="Nome completo" required>
-            </div>
+        <section class="contato-form">
+          <h1 class="tlight italiano tfale">Fale Conosco</h1>
+          <form id="formContato" class="">
+          <div class="form-lin">
+              <div class="form-col1">
+              <input class="form-control margind-sm" type="text" name="nome" placeholder="Nome completo" required>
+              <input class="form-control margind-sm" type="email" name="email" placeholder="Email" required>
+              <input class="form-control margind-sm" type="tel" style="width: 50%;" name="telefone" placeholder="Telefone (somente números)" required pattern="[0-9]{10,11}">
+              </div>
 
-            <div class="form-col2 text-center">
-            <input type="date" name="nascimento" required>
-            </div>
-        </div>
+              <div class="form-col2 text-center margind-sm" style="color: #fffaf5;">
+              <input class="form-control margind-sm" type="date" name="nascimento" required>
+              <legend>Tipo de cliente</legend>
+                  <div class="text-center" style="text-align: justify;">
+                  <label><input type="radio" name="tipo" value="cliente" required> Cliente</label>
+                  <label><input type="radio" name="tipo" value="fornecedor"> Fornecedor</label>
+                  </div>
+              </div>
+          </div>
 
-        <div class="form-lin margin-sm">
-            <div class="form-col1">
-            <input class="form-control margin-sm" type="email" name="email" placeholder="Email" required>
-            <input class="form-control" type="tel" name="telefone" placeholder="Telefone (somente números)" required pattern="[0-9]{10,11}">
-            </div>
+          <select name="assunto" required class="form-select margind-sm">
+              <option value="" disabled selected>Selecione um assunto</option>
+              <option value="elogio">Elogio</option>
+              <option value="reclamacao">Reclamação</option>
+              <option value="pedido">Pedido Especial</option>
+              <option value="outro">Outro</option>
+          </select>
 
-            <div class="form-col2" style="background-color: var(--primary-dark); border-radius: 10%; text-align: center; height: 80px;">
-                <fieldset>
-                <legend>Tipo de cliente</legend>
-                <label><input type="radio" name="tipo" value="cliente" required> Cliente</label>
-                <label><input type="radio" name="tipo" value="fornecedor"> Fornecedor</label>
-                </fieldset>
-            </div>
-        </div>
+          <textarea name="mensagem" placeholder="Sua mensagem" required class="form-control"></textarea>
 
-        <select name="assunto" required class="margin-sm form-select">
-            <option value="" disabled selected>Selecione um assunto</option>
-            <option value="elogio">Elogio</option>
-            <option value="reclamacao">Reclamação</option>
-            <option value="pedido">Pedido Especial</option>
-            <option value="outro">Outro</option>
-        </select>
-
-        <div class="margin-sm">
-        <textarea name="mensagem" placeholder="Sua mensagem" required class="form-control"></textarea>
-        </div>
-
-        <div class="margin-sm form-lin" style="justify-content: space-between;">
-            <div class="form-col3"><label><input type="checkbox" class="form-check-input" name="newsletter"> Quero receber novidades por email</label></div>
-            <div class="form-col4"><button type="submit" class="btn btn-primary">Enviar Mensagem</button></div>
-        </div>
-        </form>
-    </div>
+          <div class="form-lin" style="justify-content: space-between; margin-top: 5px;">
+              <div class="text-center margind-sm" style="color: #fffaf5;"><label><input type="checkbox" class="form-check-input" name="newsletter"> Quero receber novidades por email</label></div>
+              <div class="text-center"><button type="submit" class="btn btn-primary" style="background-color: var(--primary-dark); border-color: var(--primary-dark);">Enviar Mensagem</button></div>
+          </div>
+          </form>
+        </section>
   </main>
 
   <!-- RODAPÉ -->

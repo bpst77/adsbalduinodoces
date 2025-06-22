@@ -151,10 +151,6 @@ body {
   padding: 20px 20px 20px 35px;
 }
 
-.form-fundo{
-  
-}
-
 .tfale{
   font-size: 4.8em;
   font-family: 700;
@@ -180,6 +176,15 @@ body {
 .contato-table{
   width: 65% !important;
   justify-self: center;
+  border: 2px;
+  border-color: #fffaf5;
+  border-style: solid;
+  border-radius: 40%;
+}
+
+.contato-table thead tr th, .contato-table tbody tr td{
+  color: #fffaf5;
+  background-color: rgba(49, 24, 0, 0.6);
 }
 
 .contato-logo{
@@ -187,8 +192,8 @@ body {
   height: 100%;
 }
 
-#contatoForm {
-
+#contatoForm div *{
+  color: #ffffff;
 }
 
 @media (max-width: 600px) {
@@ -238,12 +243,17 @@ body {
 }
 
 @media (min-height: 800px) and (min-width: 601px){
-  .contato-table{
-    height: auto;
-  }
-
   .contato-main{
     width: 80%;
   }
+}
+
+@media (min-height: 801px){
+   .contato-fundo{
+    background-image: url("contato-fundo3.png");
+    height: 100vh;
+    padding: 10% 0;
+  }
+
 }
 /*contato---*/
