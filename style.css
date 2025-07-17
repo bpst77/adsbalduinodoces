@@ -15,245 +15,408 @@ body {
   line-height: 1.6;
 }
 
+/* Header e Navbar */
 .text-logo {
   font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--primary-color);
 }
 
-/*espacinho*/
-.margind-sm{margin-bottom: 10px;} .margind-md{margin-bottom: 40px;}
-
-.tlight{
-  color: var(--light-bg)
+.text-logo::first-letter {
+  font-size: 2.8rem;
 }
 
-/* sobre */
-.sobre-linha{
-  display: flex;
-  gap: 10px;
-  justify-items: center;
-  justify-self: center;
+.nav-link {
+  transition: color 0.3s ease;
+  font-weight: 500;
+  color: var(--primary-dark) !important;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+/* Banner */
+.product-banner {
+  background: linear-gradient(rgba(165, 139, 111, 0.7), rgba(165, 139, 111, 0.7)) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 100px 0;
+  margin-bottom: 50px;
+}
+
+.product-banner h1 {
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+.product-banner p {
+  color: white;
+}
+
+/* Seções comuns */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+.espaco-destaque {
+  background-color: var(--light-bg);
+  text-align: justify;
+  padding: 4rem 0;
+}
+
+.espaco-destaque h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-color);
+}
+
+.espaco-destaque p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Carrossel */
+.gallery-cell:hover {
+  transform: scale(1.05);
+}
+
+.gallery-cell img {
   width: 100%;
-  padding: 4% 15%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid var(--primary-light);
+}
+
+.carrossel-destaque {
+  padding: 4rem 0;
+  background-color: var(--light-bg);
+}
+
+.carrossel-destaque h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-color);
+}
+
+/* Produtos */
+.product-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
   height: 100%;
 }
 
-.sobre-coluna1{
-  flex: 0 0 35%; 
-  text-align: left;
-  padding-right: 3%;
-  padding-left: 10%;
-  position: sticky;
-  top: 100px;
-  align-self: flex-start;
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(165, 139, 111, 0.2);
 }
 
-.sobre-coluna2{
-  flex: 0 0 65%;
-  text-align: left;
+.product-img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--primary-light);
 }
 
-.sobre-index{
-  border-right: 4px outset var(--primary-color);
-  border-bottom: 4px outset var(--primary-color);
-  color: var(--primary-color);
-  padding: 1%;
+.product-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-dark);
+}
+
+.price-tag {
+  background-color: var(--primary-light);
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.category-filter {
   margin-bottom: 30px;
+}
+
+.category-btn {
+  border: 2px solid var(--primary-light);
+  color: var(--primary-dark);
+  margin: 5px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover, .category-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* Formulário de Contato */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--light-bg);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px var(--primary-light);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px;
+  border: 1px solid var(--primary-light);
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-fieldset {
+  border: 1px solid var(--primary-light);
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0 16px;
+}
+
+.contact-fieldset legend {
+  padding: 0 8px;
+  color: var(--primary-dark);
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Tabelas */
+.table {
+  margin: 20px auto;
+}
+
+.table th {
+  background-color: var(--primary-light);
+  color: white;
+}
+
+.table-bordered th, .table-bordered td {
+  border: 1px solid var(--primary-light);
+}
+
+/* Botões */
+.btn {
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark) !important;
+  color: white !important;
+}
+
+/* Instagram */
+.instagram-post {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.instagram-post img {
+  border: 2px solid var(--primary-light);
+  transition: transform 0.3s ease;
+}
+
+.instagram-post img:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+.instagram-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(165, 139, 111, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.instagram-post:hover .instagram-hover {
+  opacity: 1;
+}
+
+/* Newsletter */
+.newsletter {
+  background-color: var(--light-bg);
+  padding: 4rem 0;
+}
+
+.newsletter h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-color);
+}
+
+.sbr-text-p b{
+  font-weight: 450;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+}
+
+footer h1, footer h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+footer h1 {
+  color: var(--primary-color);
+}
+
+footer h6 {
+  color: var(--primary-dark);
+}
+
+footer p, footer a {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
+
+.footer-bottom {
+  background-color: var(--primary-light);
+  padding: 1rem 0;
+}
+
+.sbr-textfun{
+  background-image: url('elementos/fachada.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.sbr-text{
+  justify-self: right;
+  width: 70%;
+  height: 100%;
+}
+
+.sbr-text-nav{
+  display: grid;
+  padding: 20px 0;
+  grid-template-columns: auto auto auto;
+}
+
+.sbr-text-btn{
+  background: none;
+  color: var(--light-bg);
+  border: none;
+  font-weight: 500;
+  font-size: 2.8rem;
+}
+
+.sbr-text-btn:hover{
+  color: var(--text-color);
+}
+
+.sbr-text-p{
+  color: var(--light-bg); 
+  text-align: justify; 
+  font-weight: 200;
   font-size: 1.2rem;
 }
 
-.sobre-index:hover{
-  color: #ffffff;
-  background-color: var(--primary-color);
+.logo{
+  width: 80px;
 }
 
-.sobre-coluna1 a{
-  text-decoration: none !important;
-}
-
-#sobre, #hist, #polit {
-  scroll-margin-top: 100px;
-}
-
-#sobre h4, #hist h4, #polit h4{
-  padding-bottom: 10px;
-  border-bottom: 3px solid var(--primary-color);
-  font-weight: 600;
-}
-
-.sobre-main{
-  border-bottom: 2px inset;
-}
-
-.sobre-text{
-  font-size: 1.2em !important;
-}
-
-@media (max-width: 500px) {
-  .sobre-linha {
-    flex-direction: column;
-    padding: 2% 5%;
-  }
-
-  .sobre-coluna1 {
-    background-color: #ffffff;
-    border-bottom: 2px inset;
-    justify-content: center;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-    padding: 0 2%;
-    display: flex;
-    gap: 10px;
-  }
-
-  .sobre-coluna1 a{
-    text-decoration: none;
-    flex: 1;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-right: 4px outset var(--primary-color);
-    border-bottom: 4px outset var(--primary-color);
-    height: 40px;
-  }
-
-  .sobre-coluna1 a p{
-    text-align: center;
-    border: none;
-  }
-}
-/* sobre-- */
-
-/*contato*/
-.italiano{
-  font-family: "Italianno", cursive; /*fonte cursiva*/
-}
-
-.contato-fundo{
-  background-image: url("contato-fundo.png");
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.contato-main{
-  width: 50%;
-  justify-self: right;
-  padding: 2%;
-}
-
-.contato-func{
-  margin-bottom: 6vh;
-}
-
-.contato-form{
-  padding: 20px 20px 20px 35px;
-}
-
-.tfale{
-  font-size: 4.8em;
-  font-family: 700;
-  margin: 0;
-}
-
-.form-lin{
-  display: flex;
-  gap: 10px;
-}
-
-.form-col1{
-  flex: 0 0 70%;
-}
-
-.form-col2{
-  flex: 0 0 30%;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-}
-
-.contato-table{
-  width: 65% !important;
-  justify-self: center;
-  border: 2px;
-  border-color: #fffaf5;
-  border-style: solid;
-  border-radius: 40%;
-}
-
-.contato-table thead tr th, .contato-table tbody tr td{
-  color: #fffaf5;
-  background-color: rgba(49, 24, 0, 0.6);
-}
-
-.contato-logo{
-  width: 40px;
-  height: 100%;
-}
-
-#contatoForm div *{
-  color: #ffffff;
-}
-
-@media (max-width: 600px) {
-    .contato-main{
-    width: 100vw;
-    justify-self: center;
-    padding: 0;
-  }
-
-  .contato-fundo{
-    background-image: url("contato-fundo2.png");
-    height: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    width: 100%;
-  }
-
-  .tfale{
-    font-size: 2.4 em;
-  }
-
-  .form-lin{
-  display: flex;
-  gap: 0;
-  flex-direction: column;
-  height: 100%;
-}
-
-.form-col1{
-  flex: 1;
-}
-
-.form-col2{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-}
-
-  .contato-form{
-    padding: 0 10px;
+/* Responsividade */
+@media (max-width: 768px) {
+  .gallery-cell {
+    width: 50%;
+    height: 200px;
   }
   
-  .btn{
-    height: 120%;
+  .text-logo {
+    font-size: 2rem;
   }
 }
 
-@media (min-height: 800px) and (min-width: 601px){
-  .contato-main{
+@media (max-width: 520px) {
+  .gallery-cell {
     width: 80%;
+    height: 180px;
+  }
+  
+  .text-logo {
+    font-size: 1.8rem;
+  }
+  
+  .product-banner {
+    padding: 60px 0;
+  }
+
+  .text-center-cell{
+    text-align: center;
+    justify-content: center;
+  }
+
+  .text-logo {
+    font-size: 1.7rem;
+  }
+
+  .text-logo::first-letter {
+    font-size: 2.2rem;
+  }
+
+  .sbr-textfun{
+    min-height: 600px;
+    background-image: url('elementos/fachada-mob.png');
+  }
+
+  .sbr-text{
+    width: 100%;
+  }
+
+  .sbr-text-btn{
+    font-size: 1.7rem;
+  }
+
+  .logo{
+    width: 50px;
   }
 }
 
-@media (min-height: 801px){
-   .contato-fundo{
-    background-image: url("contato-fundo3.png");
-    height: 100vh;
-    padding: 10% 0;
-  }
-
-}
-/*contato---*/

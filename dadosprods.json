@@ -5,26 +5,26 @@
 ],
 
 "brigs": [
-    {"link": "prods/brigs1.jpg", "tit": "Brigadeiro", "desc": "Descricao", "prec": "R$ 7,00"},
-    {"link": "prods/brigs2.jpg", "tit": "Beijinho", "desc": "Descricao", "prec": "R$ 8,00"},
-    {"link": "prods/brigs3.jpg", "tit": "Bicho de pé", "desc": "Descricao", "prec": "R$ 9,00"}
+    {"link": "prods/brigs1.jpg", "tit": "Brigadeiro", "desc": "Clássico de chocolate das festinhas", "prec": "R$ 7,00"},
+    {"link": "prods/brigs2.jpg", "tit": "Beijinho", "desc": "Doce tradicional feito do jeitinho balduino", "prec": "R$ 8,00"},
+    {"link": "prods/brigs3.jpg", "tit": "Bicho de pé", "desc": "O rosinha incomum com um toque de áçucar confeiteiro", "prec": "R$ 9,00"}
 ],
 
 "bolos": [
-    {"link": "prods/bolos1.jpg", "tit": "Limão", "desc": "Descricao", "prec": "R$ 7,00"},
-    {"link": "prods/bolos2.jpg", "tit": "Murango", "desc": "Descricao", "prec": "R$ 7,00"},
-    {"link": "prods/bolos3.jpg", "tit": "Cenoura", "desc": "Descricao", "prec": "R$ 7,00"}
+    {"link": "prods/bolos1.jpg", "tit": "Limão", "desc": "Bolo cremoso e doce na medida certa", "prec": "R$ 7,00"},
+    {"link": "prods/bolos2.jpg", "tit": "Murango", "desc": "Hmm bolo de murango", "prec": "R$ 7,00"},
+    {"link": "prods/bolos3.jpg", "tit": "Cenoura", "desc": "Bolo feito com massa trufada", "prec": "R$ 7,00"}
 ],
 
 "finos": [
-    {"link": "prods/finos1.jpg", "tit": "Casquinha", "desc": "Descricao", "prec": "7,00"},
-    {"link": "prods/finos2.jpg", "tit": "Trufado", "desc": "Descricao", "prec": "8,00"},
-    {"link": "prods/finos3.jpg", "tit": "Recheio", "desc": "Descricao", "prec": "9,00"}
+    {"link": "prods/finos1.jpg", "tit": "Casquinha", "desc": "Caxinhas comestíveis", "prec": "R$ 1,50"},
+    {"link": "prods/finos2.jpg", "tit": "Trufado", "desc": "Bombom recheado com diferentes sabores", "prec": "R$ 2,50"},
+    {"link": "prods/finos3.jpg", "tit": "Recheio", "desc": "Os potinhos recheados únicos", "prec": "R$ 3,00"}
 ],
 
 "kits": [
-    {"link": 1, "tit": "Título", "desc": "Descricao", "prec": "7,00"},
-    {"link": 1, "tit": "Título", "desc": "Descricao", "prec": "8,00"},
-    {"link": 1, "tit": "Título", "desc": "Descricao", "prec": "9,00"}
+    {"link": "prods/kits1.jfif", "tit": "Ceu rosado", "desc": "Doces de massa variados", "prec": "R$ 9,50"},
+    {"link": "prods/kits2.jfif", "tit": "Quatro reinos", "desc": "Trufados baseado em quatro biomas", "prec": "R$ 9,00"},
+    {"link": "prods/kits3.jfif", "tit": "Arco dourado", "desc": "Aspecto e sabor majestoso", "prec": "R$ 10,00"}
 ]
 }
