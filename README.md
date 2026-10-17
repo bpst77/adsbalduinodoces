@@ -1,7 +1,7 @@
 # Aplicação Web - venda digital (doces)
 
 > **Desenvolvimento Web ** — Desenvolvimento de uma aplicação web baseada em sites de venda digital
-> *Esta versão uma seção extra, a versão feita até o prazo esta em outra branch*
+*Esta versão tem uma seção extra, a versão feita até o prazo esta em outra branch*
 ---
 
 ## 📌 Sobre o Projeto
