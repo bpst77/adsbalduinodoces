@@ -6,7 +6,7 @@
 
 ## 📌 Sobre o Projeto
 
-O presente projeto tem como objetivo o desenvolvimento de uma aplicação web com o uso do framework 'Bootstrap' do para uma empresa ficticia (mas baseada num negócio de um dos integrantes).
+O presente projeto tem como objetivo o desenvolvimento de uma aplicação web com o uso do framework 'Bootstrap' para uma empresa ficticia (mas baseada num negócio de um dos integrantes).
 
 Este projeto foi desenvolvido como requisito para composição de nota.
 
