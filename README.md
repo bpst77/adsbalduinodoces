@@ -1,10 +1,10 @@
 # Aplicação Web - venda digital (doces)
 
 > **Desenvolvimento Web ** — Desenvolvimento de uma aplicação web baseada em sites de venda digital
-*Esta versão tem uma seção extra, a versão feita até o prazo esta em outra branch*
 ---
 
 ## 📌 Sobre o Projeto
+*Esta versão tem uma seção extra, a versão feita até o prazo esta em outra branch*
 
 O presente projeto tem como objetivo o desenvolvimento de uma aplicação web com o uso do framework 'Bootstrap' para uma empresa ficticia (mas baseada num negócio de um dos integrantes).
 
